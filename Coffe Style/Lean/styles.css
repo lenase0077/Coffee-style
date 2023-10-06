@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-image: url(imagenes/branding/imagen_2023-10-05_202707670.png);
 }
 
 /* Estilos de la barra de navegación */
 .navbar {
-  position: relative;
+  position: absolute;
   background-color: #ff000000;
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,9 @@ body {
   padding: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .logo img {
@@ -43,8 +47,31 @@ body {
 }
 
 .nav-links a:hover {
-  color: #dd49b5; /* Cambiar el color al pasar el mouse */
+  color: #57b5e4;
 }
+
+.nav-links li a {
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 /* -----------------------------slider------------------------------ */
 * {
@@ -56,7 +83,6 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  top: -150px; /* Ajusta la distancia al navbar según la altura de tu navbar */
   left: 0;
   z-index: 0; /* Mantén el valor actual o ajusta según sea necesario */
 }
@@ -183,41 +209,114 @@ body {
   background: #fff !important;
 }
 
-.imagen-texto-1 {
-    position: relative;
-    top: -169px;
-    width: 100%; /* Ajusta el ancho según tus necesidades */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Asegura que la imagen no tenga márgenes no deseados */
-  }
+/* -------------------------------------Contenedor dos imagenes descubre---------------------- */
 
-  .imagen-texto-1-imagen-1{
-    position: relative;
-    height: ;
-    width: 40%;
-    z-index: 1;
-  }
+.descubre-contenedor {
+  display: flex !important;
+  box-sizing: border-box;
+}
 
-  .imagen-texto-1-imagen-2{
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-  }
-  .imagen-texto-1-imagen-2{
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-  }
-  .imagen-texto-1{
-    z-index: 2;
-  }
-/* -----------------------------------------MEDIA CHANGE */
+.media-imagen {
+  display: block;
+  width: 100%;
+  padding: 35% 10% 10% 10%;
+  box-sizing: border-box;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.contenedor-texto {
+width: 100%;
+padding: 30px 15px;
+}
+
+.contenedor-negro{
+  background-color: #000000b1;
+  padding: 40px 150px;
+  margin-left: -150px;
+}
+.subtitulo-entry{
+  display: block;
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #f9a03f;
+}
+.titulo-1{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+}
+
+.descubre-texto{
+  color: #fff;
+  font-size: 20px;
+  font-family: font-family: 'Poppins', sans-serif;
+}
+/* ---------------------------------------------primer banner----------------------------------*/
+
+.banner {
+  background-image: url(imagenes/banner/mapa.png);
+  background-color: #E68623;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: auto; /* Ancho máximo del banner */
+  margin: 0 auto; /* Centrar el banner horizontalmente */
+}
+
+.left-section {
+  flex: 1; /* Toma una parte flexible del espacio disponible */
+  padding: 20px; /* Espaciado interior para la imagen */
+  display: flex;
+  justify-content: flex-end; /* Alinea la imagen a la derecha */
+  align-items: center; /* Centra verticalmente la imagen */
+}
+
+.left-section img {
+  width: 60%;
+  max-width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+  height: auto;
+  display: block;
+}
+
+.right-section {
+  flex: 1; /* Toma una parte flexible del espacio disponible */
+  padding: 20px; /* Espaciado interior para el texto */
+  background-color: rgba(14, 7, 0, 0.277); /* Color de fondo del lado derecho */
+  color: #fff; /* Color del texto */
+  text-align: center;
+  padding: 130px 50px;
+  margin-right: 20px;
+} 
+
+h1 {
+  font-size: 36px; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px; /* Tamaño del texto adicional */
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff9c42; /* Color del botón */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #e68623; /* Cambiar el color al pasar el mouse */
+}
+
+ /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -269,5 +368,29 @@ body {
   .btnSlider {
     padding: 10px 30px;
     font-size: 10pt;
+  }
+
+  .imagen-de-arriba {
+    position: relative;
+    margin-top: 152px;
+    width: 100%;
+    height: auto;
+  }
+  .imagen-de-fondo {
+    position: relative;
+    margin-top: -10px;
+  }
+
+  .descubre-contenedor {
+    flex-direction: column;
+  }
+
+  .media-imagen {
+    order: 1;
+  }
+
+  .contenedor-texto {
+    order: 2;
+    
   }
 }
