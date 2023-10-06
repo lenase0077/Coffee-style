@@ -44,6 +44,8 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-family: font-family: 'Poppins', sans-serif;
+
 }
 
 .nav-links a:hover {
@@ -259,7 +261,7 @@ padding: 30px 15px;
 
 .banner {
   background-image: url(imagenes/banner/mapa.png);
-  background-color: #E68623;
+  background-color: #78542b;
   display: flex;
   align-items: center;
   width: 100%;
@@ -290,11 +292,12 @@ padding: 30px 15px;
   text-align: center;
   padding: 130px 50px;
   margin-right: 20px;
-} 
+}
 
 h1 {
   font-size: 36px; /* Tamaño del título */
   margin-bottom: 20px;
+  font-family: 'Great Vibes';
 }
 
 p {
