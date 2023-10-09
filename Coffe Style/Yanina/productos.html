@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="productos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">
+                <img src="imagenes/logo.svg" alt="Logo de la empresa">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Ubicacion</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="container-slider">
+        <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i
+                class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i
+                class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+            <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+            <li><a itlist="itList_1" href="#"></a></li>
+            <li><a itlist="itList_2" href="#"></a></li>
+            <li><a itlist="itList_3" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+            <li style="background-image: url('imagenes/branding/produccion\ cafe1.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider">
+                    <div>
+                        <h1>Conoce nuestros productos</h1>
+                        <p>Te invitamos a explorar la emocionante diversidad de los cafés de todo el mundo!
+                            Encontrarás una experiencia de café que te transportará directamente a las montañas de Colombia, las
+                            plantaciones de Brasil, las tierras argentinas y las exuberantes regiones de Indonesia.</p>
+                        <h3> ¡Tu viaje a través de los sabores del mundo comienza aquí!</h3>
+                        </p>
+                        <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+                    </div>
+                </div>
+            </li>
+            <li
+                style="background-image: url('imagenes/branding/produccion\ cafe.jpg'); z-index:0; opacity: 1;">
+                <div class="content_slider">
+                    <div>
+                        <h1>Colombian Coffee</h1>
+                        <p>Sumérgete en la rica tradición cafetera de Colombia</p>
+                        <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url('imagenes/branding/produccion\ cafe3.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h1>Brasil Coffee</h1>
+                        <p> Deleita tus sentidos con la calidez y la robustez del café brasileño.</p>
+                        <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url('imagenes/branding/produccion\ cafe4.jpg'); ">
+                <div class="content_slider">
+                    <div>
+                        <h1>Indonesia Coffee</h1>
+                        <p>Viaja a las exóticas tierras de Indonesia con nuestro café indonesia. </p>
+                        <a href="https://www.migueltroyano.com" target="_blank" class="btnSlider">Acceder</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <div class="banner">
+        <div class="left-section">
+            <img src="imagenes/branding/Coffee colombian.jpg" alt="Cafe de colombia">
+        </div>
+        <div class="right-section">
+            <h1>Café de Colombia</h1>
+            <p>El café colombiano es un café de alta calidad cultivado en las montañas de Colombia. Destaca por su sabor
+                complejo con notas de nueces, chocolate y caramelo, y una suave acidez cítrica. Los granos son
+                seleccionados a mano y suelen ser de la variedad arábica, conocida por su suavidad. Es apreciado por su
+                cuerpo completo y su final limpio en el paladar. Este café representa la rica tradición cafetera de
+                Colombia.</p>
+            <a href="#" class="button">Botón</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left-section">
+            <img src="imagenes/imagenes carrusel/Cafe verde.jpg" alt="Cafe de colombia">
+        </div>
+        <div class="right-section">
+            <h1>Café de Indonesia</h1>
+            <p>El café de Indonesia es famoso por su perfil de sabor terroso y especiado, con notas que pueden incluir
+                matices de hierbas, tierra húmeda y especias como canela y clavo. Un café verde de Indonesia es versátil
+                y puede ser tostado de diferentes maneras para resaltar diferentes aspectos de su sabor.</p>
+            <a href="#" class="button">Botón</a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left-section">
+            <img src="imagenes/branding/cafe brasil.jpg" alt="Cafe de colombia">
+        </div>
+        <div class="right-section">
+            <h1>Café de Brasil</h1>
+            <p>Nuestro café de Brasil se caracteriza por su suavidad y sabor terroso, con notas de nueces y chocolate que evocan la rica herencia cafetera de este país. Es una elección perfecta para quienes buscan un café equilibrado y versátil.</p>
+            <a href="#" class="button">Botón</a>
+        </div>
+    </div>
+
+
+
+    <script defer src="funciones.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+
+</html>
