@@ -131,6 +131,8 @@ body {
   padding: 10px;
   overflow: hidden;
 }
+
+
 .fotoGaleria {
   display: flex;
   flex-flow: wrap;
@@ -211,4 +213,100 @@ body {
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
+}
+
+
+/* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: #111;
+  }
+
+  #container-slider {
+    position: relative;
+    top: 1%; /* Ajusta según sea necesario para evitar la superposición */
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .content_slider h2 {
+    font-size: 15pt !important;
+  }
+  .content_slider p {
+    font-size: 12pt !important;
+  }
+  #container-slider .arrowPrev,
+  #container-slider .arrowNext {
+    font-size: 20pt;
+  }
+  #container-slider .arrowPrev {
+    left: 15px;
+  }
+  #container-slider .arrowNext {
+    right: 15px !important;
+  }
+  #slider {
+    height: 400px;
+    min-height: 400px;
+  }
+  #slider li .content_slider {
+    padding: 10px 35px;
+  }
+  .btnSlider {
+    padding: 10px 30px;
+    font-size: 10pt;
+  }
+
+  .imagen-de-arriba {
+    position: relative;
+    margin-top: 152px;
+    width: 100%;
+    height: auto;
+  }
+  .imagen-de-fondo {
+    position: relative;
+    margin-top: -10px;
+  }
+
+  .descubre-contenedor {
+    flex-direction: column;
+  }
+
+  .media-imagen {
+    order: 1;
+  }
+
+  .contenedor-texto {
+    order: 2;
+    
+  }
+
+  .contenedor-minigaleria {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+
+  .sucursales-contenedor {
+    display: flex !important;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+  
 }
