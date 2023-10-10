@@ -8,8 +8,8 @@ body {
 
 /* Estilos de la barra de navegación */
 .navbar {
-  position: absolute;
-  background-color: #ff000000;
+  position: fixed;
+/*   background-color: #ff000000; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +19,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
+
+  transition: background-color 0.7s ease;
+}
+
+.navbar-scroll   { /* ACA AGREGUE ESTO PARA CAMBIAR COLOR DEL NAV CUANDO ME MUEVA */
+  background-color: #1a110d; 
 }
 
 .logo img {
@@ -44,7 +50,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  font-family: font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -317,6 +323,25 @@ p {
 
 .button:hover {
   background-color: #e68623; /* Cambiar el color al pasar el mouse */
+}
+
+ /* ---------------------------------------------FOOTER--------------------------------------------------------------------------- */
+
+
+.footer{
+  background-color: #000000b1;
+
+  margin-top: 20px;
+  padding: 10px;
+  overflow: hidden;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.footer-info {
+color: #ffffff;
+font-family: 'Arial';
 }
 
  /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
