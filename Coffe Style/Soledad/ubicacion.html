@@ -31,13 +31,24 @@
                 <img src="imagenes/logo.svg" alt="Logo de la empresa">
             </a>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="../Lean/index.html">Inicio</a></li>
             <li><a href="../Martin/acercade.html">Acerca de</a></li>
             <li><a href="../Yanina/productos.html">Servicios</a></li>
             <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
+
+
+       <!-- toggle -->
+       <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+
     </nav>
 
     <header id="headerSucursales" >
@@ -94,7 +105,7 @@
 
    
 
-    <section class="container-sucursal "> <!-- CONTENEDOR DE UNA SUCURSAL A IZQUIERDA-->
+    <section class="container-sucursal"> <!-- CONTENEDOR DE UNA SUCURSAL A IZQUIERDA-->
         
             <div class="column-sucursal " style="background-image: url('imagenes/sucursales.jpg'); background-size: cover; ">
                 <!-- Contenido de la primera columna -->
@@ -123,9 +134,9 @@
    
     <!-- FIN SUCURSAL-->
 
-    <section class="container-sucursal"> <!-- CONTENEDOR DE UNA SUCURSAL A DERECHA -->
+    <section class="container-sucursal-1"> <!-- CONTENEDOR DE UNA SUCURSAL A DERECHA -->
         
-        <div class="column-sucursal " >
+        <div class="column-sucursal" >
             <!-- Contenido de la primera columna -->
 
             <br>
@@ -152,9 +163,9 @@
 <!-- FIN SUCURSAL-->
 
 
-<section class="container-sucursal "> <!-- CONTENEDOR DE UNA SUCURSAL A IZQUIERDA-->
+<section class="container-sucursal"> <!-- CONTENEDOR DE UNA SUCURSAL A IZQUIERDA-->
         
-    <div class="column-sucursal " style="background-image: url('imagenes/sucursales3.jpg'); background-size: cover; ">
+    <div class="column-sucursal"  style="background-image: url('imagenes/sucursales3.jpg'); background-size: cover; ">
         <!-- Contenido de la primera columna -->
        <div class="informacion-card">
          <h2>Sucursal Palermo</h2>
@@ -219,6 +230,8 @@
 
 
 <script src="./cambiarColorNavbar.js"></script>
+<script src="./menuToggle.js"></script> <!-- ESTE EL QUE TIENE EL MENU-->
+
 </body>
 
 </html>

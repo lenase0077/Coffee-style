@@ -12,3 +12,5 @@ function cambiarColorNavbar() {
 
 // Agregar un event listener para detectar el scroll
 window.addEventListener('scroll', cambiarColorNavbar);
+
+
