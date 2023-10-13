@@ -80,6 +80,51 @@ body {
   transform-origin: bottom left;
 }
 
+
+
+/* ---------------------- MENU TOGGLE -------------------------*/
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* ESTAS SON LAS 3 RAYITAS */
+.bar { 
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+
+/* Estilos para el menú en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      margin-left: 0px;
+    
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+}
+
+
+/* ---------------------- FIN MENU TOGGLE -------------------------*/
+
 /* Style for the map and image containers */
 #map {
   float: left;
@@ -153,7 +198,24 @@ body {
   height: 400px;
 }
 
+.container-sucursal-1 {
+  display: flex; /* Establece un contenedor flexible */
+  overflow: hidden;
+  height: 400px;
+}
+
 .column-sucursal {
+  flex: 1; /* Hace que ambas columnas ocupen el mismo espacio disponible */
+  padding: 10px; /* Agrega espacio alrededor de las columnas (ajusta según tus necesidades) */
+  border: 1px solid #ccc; /* Agrega bordes para separar las columnas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.column-sucursal-1 {
   flex: 1; /* Hace que ambas columnas ocupen el mismo espacio disponible */
   padding: 10px; /* Agrega espacio alrededor de las columnas (ajusta según tus necesidades) */
   border: 1px solid #ccc; /* Agrega bordes para separar las columnas */
@@ -216,6 +278,9 @@ body {
   color: #ffffff;
   font-family: "Arial";
 }
+
+
+
 
 
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
@@ -304,12 +369,21 @@ body {
     flex-direction: column;
   }
 
-
   .container-sucursal {
+    display: flex; 
+    overflow: hidden;
+    height: 400px;
+    flex-direction: column;
+  }
+  
+  .container-sucursal-1 {
     display: flex; /* Establece un contenedor flexible */
     overflow: hidden;
-    height: auto;
-    flex-direction:column;
+    height: 400px;
+    flex-direction: column-reverse;
   }
+
+
+ 
   
 }
