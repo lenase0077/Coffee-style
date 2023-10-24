@@ -1,8 +1,11 @@
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
 
-menuToggle.addEventListener("click", () => {
-  console.log("HICE CLICK EN EL BOTON"); // LE AGREGUE ESTO PARA VER QUE PASABA AL HACER CLICK
-  navLinks.classList.toggle("show");
+document.getElementById("menu-toggle").addEventListener("click", function() {
+  var navLinks = document.getElementById("nav-links");
+  if (navLinks.style.display === "block") {
+      navLinks.style.display = "none";
+  } else {
+      navLinks.style.display = "block";
+  }
 });
+
 

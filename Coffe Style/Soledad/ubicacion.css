@@ -80,11 +80,19 @@ body {
   transform-origin: bottom left;
 }
 
+/* ---------------------- LOGO  -------------------------*/
 
+.logo {
+
+margin-left: 50px;
+padding: 5px;
+height: auto;
+width: 250px;
+}
+
+/* ---------------------- LOGO -------------------------*/
 
 /* ---------------------- MENU TOGGLE -------------------------*/
-
-
 
 .menu-toggle {
   display: none;
@@ -109,16 +117,22 @@ body {
 
   .nav-links {
     display: none;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
       
-      margin-left: 0px;
+    margin-left: 0px;
     
   }
 
   .nav-links.show {
     left: 0;
+  }
+
+  .logo {
+    
+    margin: 0;
+    
   }
 }
 
