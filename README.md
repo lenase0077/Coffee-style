@@ -9,8 +9,6 @@ Este proyecto se centra en el desarrollo de una página web para la marca "Coffe
 ## Características Destacadas
 
 - Catálogo de productos de café.
-- Carrito de compras.
-- Proceso de compra en línea.
 - Información detallada de los productos.
 - Página de contacto.
 - Diseño atractivo y amigable.
