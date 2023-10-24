@@ -398,6 +398,32 @@ width: 250px;
   }
 
 
- 
+ /* Estilos para el menú en pantallas pequeñas */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+      
+    margin-left: 0px;
+    
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+  .logo {
+    
+    margin: 0;
+    
+  
+}
+
   
 }
