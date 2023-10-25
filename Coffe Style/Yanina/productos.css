@@ -347,5 +347,24 @@ body {
     flex-direction: column;
   }
   
+
+ /* Estilos para el menú en pantallas pequeñas */
+
+
+
+ .nav-links {
+  display: none;
 }
 
+
+.menu-toggle {
+  display: flex; 
+  margin-right: 50px;
+}
+
+.logo {
+  margin: 0;
+}
+
+  
+}
