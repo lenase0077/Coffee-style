@@ -20,7 +20,52 @@ body {
     left: 0;
     right: 0;
   }
+  <style>
+  body {
+      background-image: url("imagenes/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  }
+  header {
+      text-align: center;
+      margin-top: 80px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      color:  white;
   
+  }
+  nav {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+  }
+  nav a {
+      text-decoration: none;
+      color: white;
+      margin: 10px;
+  }
+  footer {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      color: white;
+  }
+  .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+  }
+{
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+font-family: 'Josefin Sans', sans-serif;
+color: #fff;
+}
+
+</style>
   .logo img {
     width: 40%; /* Ancho de la imagen de logo */
     height: auto; /* Altura automática para mantener la proporción */
@@ -409,7 +454,7 @@ body {
 .social-logo.instagram {
     width: 30px; /* Ajusta el tamaño según tus preferencias */
     height: 30px; /* Ajusta el tamaño según tus preferencias */
-    border-radius: 30px;
+    /*border-radius: 30px;
     border-bottom: 30px;
     border-right: 30px;
     border-left: 30px;
@@ -419,7 +464,7 @@ body {
 .social-logo.mercadolibre {
   width: 30px; /* Ajusta el tamaño según tus preferencias */
   height: 30px; /* Ajusta el tamaño según tus preferencias */
-  border-radius: 30px;
+  /*border-radius: 30px;
   border-bottom: 30px;
   border-right: 30px;
   border-left: 30px;
@@ -428,7 +473,7 @@ body {
 .social-logo.facebook {
   width: 30px; /* Ajusta el tamaño según tus preferencias */
   height: 30px; /* Ajusta el tamaño según tus preferencias */
-  border-radius: 30px;
+  /*border-radius: 30px;
   border-bottom: 30px;
   border-right: 30px;
   border-left: 30px;
@@ -437,7 +482,7 @@ body {
 .social-logo.whatsapp {
   width: 30px; /* Ajusta el tamaño según tus preferencias */
   height: 30px; /* Ajusta el tamaño según tus preferencias */
-  border-radius: 30px;
+  /*border-radius: 30px;
   border-bottom: 30px;
   border-right: 30px;
   border-left: 30px;
