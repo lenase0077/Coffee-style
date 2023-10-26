@@ -238,74 +238,44 @@ width: 250px;
 
 
 
-footer {
-  text-align: center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  color: white;
-}
-
-footer{
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
+.footer {
   background-color: #000000b1;
-  margin-top: 20px;
   padding: 10px;
   overflow: hidden;
   font-weight: 500;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   display: flex;
 }
 
+.footer-info {
+  color: #ffffff;
+  font-family: "Arial";
+  margin-left: 50px;
+}
 
-/*   -----------------------------------------------------LOGO---------------------------------------------- */
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
+
 .social-logo {
-  width: 30px; /* Ajusta el tamaño según tus preferencias */
-  height: auto;
-  justify-content: right;
-  align-items: end;
-}
+
+margin-right: 10px;
 
 
-.social-logo.instagram {
-  width: 30px; /* Ajusta el tamaño según tus preferencias */
-  height: 30px; /* Ajusta el tamaño según tus preferencias */
-  /*border-radius: 30px;
-  border-bottom: 30px;
-  border-right: 30px;
-  border-left: 30px;
-  background-color: transparent; /* el fondo como transparente */
-
-}
-.social-logo.mercadolibre {
-width: 30px; /* Ajusta el tamaño según tus preferencias */
-height: 30px; /* Ajusta el tamaño según tus preferencias */
-/*border-radius: 30px;
-border-bottom: 30px;
-border-right: 30px;
-border-left: 30px;
-background-color: transparent; /* el fondo como transparente */
-}
-.social-logo.facebook {
-width: 30px; /* Ajusta el tamaño según tus preferencias */
-height: 30px; /* Ajusta el tamaño según tus preferencias */
-/*border-radius: 30px;
-border-bottom: 30px;
-border-right: 30px;
-border-left: 30px;
-background-color: transparent; /* el fondo como transparente */
-}
-.social-logo.whatsapp {
-width: 30px; /* Ajusta el tamaño según tus preferencias */
-height: 30px; /* Ajusta el tamaño según tus preferencias */
-/*border-radius: 30px;
-border-bottom: 30px;
-border-right: 30px;
-border-left: 30px;
-background-color: transparent; /* el fondo como transparente */
 }
 
-/*   -----------------------------------------------------LOGO---------------------------------------------- */
+/* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
+
+
+
 
 
 
