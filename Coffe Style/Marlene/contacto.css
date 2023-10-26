@@ -1,48 +1,180 @@
+* 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(imagenes/vista-superior-granos-cafe-sobre-espacio-fondo-blanco-texto\ \(2\).jpg);
+ 
+ }
+  .navbar {
+    position: fixed;
+    /*background-color: #ff000000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    transition: background-color 0.7s ease;
+ }
+ .navbar-scroll {
+  /* ACA AGREGUE ESTO PARA CAMBIAR COLOR DEL NAV CUANDO ME MUEVA */
+  background-color: #1a110d;
+}
+.logo img {
+  width: 40%; /* Ancho de la imagen de logo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 10px; /* Margen derecho opcional */
+}
 
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-image: url(imagenes/vista-superior-granos-cafe-sobre-espacio-fondo-blanco-texto\ \(2\).jpg);
-      background-color: #d8b75d;
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 0px;
+}
 
-     
-      
-    }
-    
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .container h1 {
-      text-align: center;
-    }
-    
-    .container input[type="text"],
-    .container input[type="email"],
-    .container textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical;
-    }
-    
-    .container button[type="submit"] {
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      float: right;
-    }
-    
-    .container button[type="submit"]:hover {
-      background-color: #45a049;
-    }
+.nav-links li {
+  margin-right: 50px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links a:hover {
+  color: #57b5e4;
+}
+
+.nav-links li a {
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.logo {
+
+  margin-left: 50px;
+  padding: 5px;
+  height: auto;
+  width: 250px;
+  }
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  /* ESTAS SON LAS 3 RAYITAS */
+  .bar { 
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  .footer {
+    background-color: #000000b1;
+    padding: 10px;
+    overflow: hidden;
+    font-weight: 500;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+  }
+  
+  .footer-info {
+    color: #ffffff;
+    font-family: "Arial";
+    margin-left: 50px;
+  }
+  
+  .social-icons {
+    display: flex;
+    width: 30px; 
+    height: 30px;
+    margin-right: 100px;
+    padding-right: 15px;
+   justify-items: center;
+   
+  }
+  
+  .social-logo {
+  
+  margin-right: 10px;
+  
+  
+  }
+ .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ab761f85;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #432f05;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.container button[type="submit"] {
+  background-color: #ab761f85;
+  color: #fff6f6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.container button[type="submit"]:hover {
+  background-color: #1e16028b;
+}
+.nav-links {
+  display: none;
+}
+
+
+.menu-toggle {
+  display: flex; 
+  margin-right: 50px;
+  order:2;
+}
+
+.logo {
+  margin: 0;
+}

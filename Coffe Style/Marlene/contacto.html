@@ -7,8 +7,37 @@
 
 </head>
 <body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">
+             
+           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> <!--logo nuevo -->
+              
+            </a>
+        </div>
+
+         <!-- toggle -->
+       <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../Lean/index.html">Inicio</a></li>
+            <li><a href="../Yanina/productos.html">Productos</a></li>
+            <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
+            <li><a href="../Martin/acercade.html">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+    </nav>
   <div class="container">
-    <h1>Contacto</h1>
+    <h1>Tienes alguna duda?</h1>
+    <P> <h4> Si deseas recibir mas informacion sobre nuesta empresa y sobre nuestros productos</h4></P>
+    <h3>DEJANOS TU MENSAJE!</h3>
+    <H3>Contacto</H3>
     <form id="contactForm">
       <input type="text" id="name" name="name" placeholder="Nombre" required>
       <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
@@ -19,6 +48,25 @@
   </div>
   
   <script src="funciones.js"></script>
-  
+  <footer class="footer">
+    <div class="footer-info">
+        <p>© Copyright 2023 Coffee Style - Todos los derechos reservados</p>
+    </div>
+    <div class="social-icons">
+        
+        <img src="imagenes/icons8-facebook-50.png" alt="Facebook" class="social-logo">
+        </a>
+        
+        <img src="imagenes/icons8-twitter-50.png" alt="WhatsApp" class="social-logo">
+        </a>
+        <img src="imagenes/icons8-instagram-50.png" alt="Instagram" class="social-logo">
+        </a>
+    </div>
+</footer>
+
+
+<script src="./menuToggle.js"></script> <!-- ESTE EL QUE TIENE EL MENU-->
+<script src="./cambiarColorNavbar.js"></script>
+</body>
 </body>
 </html>
