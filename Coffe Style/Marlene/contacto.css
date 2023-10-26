@@ -3,28 +3,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(imagenes/vista-superior-granos-cafe-sobre-espacio-fondo-blanco-texto\ \(2\).jpg);
  
  }
-  .navbar {
-    position: fixed;
-    /*background-color: #ff000000; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    z-index: 3;
-    top: 0;
-    left: 0;
-    right: 0;
-  
-    transition: background-color 0.7s ease;
- }
- .navbar-scroll {
+  /* Estilos de la barra de navegación */
+.navbar {
+  position: fixed;
+  /*background-color: #ff000000; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: background-color 0.7s ease; /* ACA AGREGUE UNA TRANSICION PARA EL PASO A COLOR*/
+}
+
+.navbar-scroll {
   /* ACA AGREGUE ESTO PARA CAMBIAR COLOR DEL NAV CUANDO ME MUEVA */
   background-color: #1a110d;
 }
+
 .logo img {
   width: 40%; /* Ancho de la imagen de logo */
   height: auto; /* Altura automática para mantener la proporción */
@@ -76,61 +78,50 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+/* ---------------------- LOGO  -------------------------*/
+
 .logo {
 
-  margin-left: 50px;
-  padding: 5px;
-  height: auto;
-  width: 250px;
-  }
-  .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  /* ESTAS SON LAS 3 RAYITAS */
-  .bar { 
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    margin: 3px 0;
-  }
-  .footer {
-    background-color: #000000b1;
-    padding: 10px;
-    overflow: hidden;
-    font-weight: 500;
-    justify-content:space-between;
-    align-items: center;
-    display: flex;
-  }
-  
-  .footer-info {
-    color: #ffffff;
-    font-family: "Arial";
-    margin-left: 50px;
-  }
-  
-  .social-icons {
-    display: flex;
-    width: 30px; 
-    height: 30px;
-    margin-right: 100px;
-    padding-right: 15px;
-   justify-items: center;
-   
-  }
-  
-  .social-logo {
-  
-  margin-right: 10px;
+margin-left: 50px;
+padding: 5px;
+height: auto;
+width: 250px;
+}
+
+/* ---------------------- LOGO -------------------------*/
+
+/* ---------------------- MENU TOGGLE -------------------------*/
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* ESTAS SON LAS 3 RAYITAS */
+.bar { 
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+
+
+
+
+/* ---------------------- FIN MENU TOGGLE -------------------------*/
+
+
+ 
   
   
-  }
+  
  .container {
   max-width: 400px;
-  margin: 0 auto;
+  /*margin: 0 auto; */
+  margin: 30px;;
   padding: 20px;
   background-color: #ab761f85;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -164,6 +155,104 @@ body {
 .container button[type="submit"]:hover {
   background-color: #1e16028b;
 }
+
+#headerContacto {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Arial";
+  font-size: 30pt;
+  color: white;
+  background-image: url(imageness/header04_1.jpg); /* ACA PODES CAMBIARLE LA IMAGEN POR ALGO QUE QUIERAS */
+  z-index: 0; 
+
+  background-size: cover;
+}
+
+
+
+
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
+.footer {
+  background-color: #000000b1;
+  padding: 10px;
+  overflow: hidden;
+  font-weight: 500;
+  justify-content:space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer-info {
+  color: #ffffff;
+  font-family: "Arial";
+  margin-left: 50px;
+}
+
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
+
+.social-logo {
+
+margin-right: 10px;
+
+
+}
+
+/* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
+
+
+/* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    position: relative;
+    background-color: #111;
+  }
+
+  
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  
+  .imagen-de-arriba {
+    position: relative;
+    margin-top: 152px;
+    width: 100%;
+    height: auto;
+  }
+  .imagen-de-fondo {
+    position: relative;
+    margin-top: -10px;
+  }
+
+
+ /* Estilos para el menú en pantallas pequeñas */
+
+
+
 .nav-links {
   display: none;
 }
@@ -178,3 +267,8 @@ body {
 .logo {
   margin: 0;
 }
+
+  
+}
+
+
