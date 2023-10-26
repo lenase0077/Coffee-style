@@ -471,8 +471,7 @@ margin-right: 10px;
   }
 
   .nav-links {
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
   .menu-toggle {
