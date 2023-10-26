@@ -251,14 +251,13 @@ width: 250px;
 }
 
 
-
+/* FOOTER Y SOCIAL MEDIA ICONS */
 .footer {
   background-color: #000000b1;
-
   padding: 10px;
   overflow: hidden;
   font-weight: 500;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   display: flex;
 }
@@ -266,9 +265,25 @@ width: 250px;
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
+  margin-left: 50px;
 }
 
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
 
+.social-logo {
+
+margin-right: 10px;
+
+
+}
 
 
 
@@ -386,6 +401,7 @@ width: 250px;
 .menu-toggle {
   display: flex; 
   margin-right: 50px;
+  order:2;
 }
 
 .logo {
