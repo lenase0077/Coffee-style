@@ -326,7 +326,7 @@ body {
   margin-right: 20px;
 }
 
-h1 {
+.h1titulo {
   font-size: 36px; /* Tamaño del título */
   margin-bottom: 20px;
   color: ;
@@ -334,7 +334,7 @@ h1 {
   color: #f9a03f;
 }
 
-p {
+.parrafo {
   font-size: 18px; /* Tamaño del texto adicional */
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -356,25 +356,38 @@ p {
 }
 
 
-/* ---------------------------------------------FOOTER--------------------------------------------------------------------------- */
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 
 .footer {
   background-color: #000000b1;
-
-  margin-top: 20px;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   font-weight: 500;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   display: flex;
 }
+
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
+  margin-left: 50px;
 }
-/* ---------------------------------------------FOOTER--------------------------------------------------------------------------- */
 
+.social-icons {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+justify-items: center;
+}
+
+.social-logo {
+margin-right: 10px;
+}
+
+/* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
@@ -454,8 +467,7 @@ p {
   }
 
   .nav-links {
-    display: flex;
-    align-items: center;
+    display: none;
   }
 
   .menu-toggle {

@@ -82,21 +82,7 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-/* ---------------------- MENU TOGGLE -------------------------*/
 
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-/* ESTAS SON LAS 3 RAYITAS */
-.bar { 
-  width: 30px;
-  height: 5px;
-  background-color: #fff;
-  margin: 3px 0;
-}
 /* Style for the map and image containers */
 #map {
   float: left;
@@ -234,13 +220,13 @@ body {
   height: fit-content;
 }
 
-/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 .footer {
   background-color: #000000b1;
+
   padding: 10px;
   overflow: hidden;
   font-weight: 500;
-  justify-content:space-between;
+  justify-content: center;
   align-items: center;
   display: flex;
 }
@@ -248,24 +234,6 @@ body {
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
-  margin-left: 50px;
-}
-
-.social-icons {
-  display: flex;
-  width: 30px; 
-  height: 30px;
-  margin-right: 100px;
-  padding-right: 15px;
- justify-items: center;
- 
-}
-
-.social-logo {
-
-margin-right: 10px;
-
-
 }
 /* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 .footer {
@@ -305,8 +273,7 @@ margin-right: 10px;
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content:space-between;
+    flex-direction: column;
     text-align: center;
     position: relative;
     background-color: #111;
@@ -314,7 +281,8 @@ margin-right: 10px;
 
   #container-slider {
     position: relative;
-    top: 1%; /* Ajusta según sea necesario para evitar la superposición */
+    top: 1%;
+    /* Ajusta según sea necesario para evitar la superposición */
   }
 
   .logo {
@@ -332,26 +300,33 @@ margin-right: 10px;
   .content_slider h2 {
     font-size: 15pt !important;
   }
+
   .content_slider p {
     font-size: 12pt !important;
   }
+
   #container-slider .arrowPrev,
   #container-slider .arrowNext {
     font-size: 20pt;
   }
+
   #container-slider .arrowPrev {
     left: 15px;
   }
+
   #container-slider .arrowNext {
     right: 15px !important;
   }
+
   #slider {
     height: 400px;
     min-height: 400px;
   }
+
   #slider li .content_slider {
     padding: 10px 35px;
   }
+
   .btnSlider {
     padding: 10px 30px;
     font-size: 10pt;
@@ -363,6 +338,7 @@ margin-right: 10px;
     width: 100%;
     height: auto;
   }
+
   .imagen-de-fondo {
     position: relative;
     margin-top: -10px;
@@ -378,7 +354,7 @@ margin-right: 10px;
 
   .contenedor-texto {
     order: 2;
-    
+
   }
 
   .contenedor-minigaleria {
@@ -389,26 +365,28 @@ margin-right: 10px;
     flex-direction: column;
   }
 
+
   .container-sucursal {
-    display: flex; 
+    display: flex;
+    /* Establece un contenedor flexible */
     overflow: hidden;
-    height: 400px;
+    height: auto;
+    flex-direction: column;
+  }
+  .contenedor_prod {
+    display: flex;
+    /* Establece un contenedor flexible */
+    overflow: hidden;
+    height: auto;
     flex-direction: column;
   }
   
-  .container-sucursal-1 {
-    display: flex; /* Establece un contenedor flexible */
-    overflow: hidden;
-    height: 400px;
-    flex-direction: column-reverse;
-  }
-
 
  /* Estilos para el menú en pantallas pequeñas */
 
 
 
-.nav-links {
+ .nav-links {
   display: none;
 }
 
@@ -416,7 +394,6 @@ margin-right: 10px;
 .menu-toggle {
   display: flex; 
   margin-right: 50px;
-  order:2;
 }
 
 .logo {
