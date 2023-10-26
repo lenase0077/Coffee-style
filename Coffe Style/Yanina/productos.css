@@ -220,13 +220,13 @@ body {
   height: fit-content;
 }
 
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 .footer {
   background-color: #000000b1;
-
   padding: 10px;
   overflow: hidden;
   font-weight: 500;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   display: flex;
 }
@@ -234,12 +234,31 @@ body {
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
+  margin-left: 50px;
+}
+
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
+
+.social-logo {
+
+margin-right: 10px;
+
+
 }
 
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    display: flex;
+    justify-content:space-between;
     text-align: center;
     position: relative;
     background-color: #111;
@@ -247,8 +266,7 @@ body {
 
   #container-slider {
     position: relative;
-    top: 1%;
-    /* Ajusta según sea necesario para evitar la superposición */
+    top: 1%; /* Ajusta según sea necesario para evitar la superposición */
   }
 
   .logo {
@@ -266,33 +284,26 @@ body {
   .content_slider h2 {
     font-size: 15pt !important;
   }
-
   .content_slider p {
     font-size: 12pt !important;
   }
-
   #container-slider .arrowPrev,
   #container-slider .arrowNext {
     font-size: 20pt;
   }
-
   #container-slider .arrowPrev {
     left: 15px;
   }
-
   #container-slider .arrowNext {
     right: 15px !important;
   }
-
   #slider {
     height: 400px;
     min-height: 400px;
   }
-
   #slider li .content_slider {
     padding: 10px 35px;
   }
-
   .btnSlider {
     padding: 10px 30px;
     font-size: 10pt;
@@ -304,7 +315,6 @@ body {
     width: 100%;
     height: auto;
   }
-
   .imagen-de-fondo {
     position: relative;
     margin-top: -10px;
@@ -320,7 +330,7 @@ body {
 
   .contenedor-texto {
     order: 2;
-
+    
   }
 
   .contenedor-minigaleria {
@@ -331,28 +341,26 @@ body {
     flex-direction: column;
   }
 
-
   .container-sucursal {
-    display: flex;
-    /* Establece un contenedor flexible */
+    display: flex; 
     overflow: hidden;
-    height: auto;
-    flex-direction: column;
-  }
-  .contenedor_prod {
-    display: flex;
-    /* Establece un contenedor flexible */
-    overflow: hidden;
-    height: auto;
+    height: 400px;
     flex-direction: column;
   }
   
+  .container-sucursal-1 {
+    display: flex; /* Establece un contenedor flexible */
+    overflow: hidden;
+    height: 400px;
+    flex-direction: column-reverse;
+  }
+
 
  /* Estilos para el menú en pantallas pequeñas */
 
 
 
- .nav-links {
+.nav-links {
   display: none;
 }
 
@@ -360,6 +368,7 @@ body {
 .menu-toggle {
   display: flex; 
   margin-right: 50px;
+  order:2;
 }
 
 .logo {
