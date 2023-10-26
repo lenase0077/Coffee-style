@@ -375,19 +375,15 @@ p {
 
 .social-icons {
   display: flex;
-  width: 30px; 
+  width: 30px;
   height: 30px;
   margin-right: 100px;
   padding-right: 15px;
- justify-items: center;
- 
+justify-items: center;
 }
 
 .social-logo {
-
 margin-right: 10px;
-
-
 }
 
 /* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
