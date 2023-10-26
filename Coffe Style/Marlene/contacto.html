@@ -4,14 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" type="image/x-icon" href="ico/favicon.ico"> <!-- FAVICON CON LA MISMA IMAGEN QUE EL LOGO NUEVO-->
 
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar"> <!-- BARRA DE NAVEGACION-->
         <div class="logo">
             <a href="#">
              
-           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> <!--logo nuevo -->
+           <img src="ico/256x256.png" alt="Logo de la empresa"> <!--logo nuevo -->
               
             </a>
         </div>
@@ -29,11 +30,19 @@
             <li><a href="../Yanina/productos.html">Productos</a></li>
             <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
             <li><a href="../Martin/acercade.html">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="../Marlene/contacto.html">Contacto</a></li>
         </ul>
 
     </nav>
-  <div class="container">
+
+
+    <header id="headerContacto" >
+        <h3 > CONTACTANOS</h3>
+    
+    </header>
+
+ <section class="container">
+       <div>
     <h1>Tienes alguna duda?</h1>
     <P> <h4> Si deseas recibir mas informacion sobre nuesta empresa y sobre nuestros productos</h4></P>
     <h3>DEJANOS TU MENSAJE!</h3>
@@ -44,29 +53,34 @@
       <input type="text" id="phone" name="phone" placeholder="Numero de Telefono" required>
       <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
       <button type="submit">Enviar</button>
+      <script src="funciones.js"></script>
     </form>
-  </div>
+      </div> 
+
+</section>
   
-  <script src="funciones.js"></script>
+  
   <footer class="footer">
     <div class="footer-info">
         <p>© Copyright 2023 Coffee Style - Todos los derechos reservados</p>
     </div>
     <div class="social-icons">
         
-        <img src="imagenes/icons8-facebook-50.png" alt="Facebook" class="social-logo">
+        <img src="icons8-facebook-50.png" alt="Facebook" class="social-logo">
         </a>
         
-        <img src="imagenes/icons8-twitter-50.png" alt="WhatsApp" class="social-logo">
+        <img src="icons8-twitter-50.png" alt="WhatsApp" class="social-logo">
         </a>
-        <img src="imagenes/icons8-instagram-50.png" alt="Instagram" class="social-logo">
+        <img src="icons8-instagram-50.png" alt="Instagram" class="social-logo">
         </a>
     </div>
+
 </footer>
 
 
 <script src="./menuToggle.js"></script> <!-- ESTE EL QUE TIENE EL MENU-->
 <script src="./cambiarColorNavbar.js"></script>
+
 </body>
 </body>
 </html>

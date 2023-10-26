@@ -167,7 +167,7 @@ width: 250px;
   font-family: "Arial";
   font-size: 30pt;
   color: white;
-  background-image: url(imageness/header04_1.jpg); /* ACA PODES CAMBIARLE LA IMAGEN POR ALGO QUE QUIERAS */
+  background-image: url('imagenes/fotoCafe.jpg'); /* ACA PODES CAMBIARLE LA IMAGEN POR ALGO QUE QUIERAS */
   z-index: 0; 
 
   background-size: cover;
