@@ -82,7 +82,21 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/* ---------------------- MENU TOGGLE -------------------------*/
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* ESTAS SON LAS 3 RAYITAS */
+.bar { 
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 3px 0;
+}
 /* Style for the map and image containers */
 #map {
   float: left;
@@ -253,7 +267,41 @@ margin-right: 10px;
 
 
 }
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
+.footer {
+  background-color: #000000b1;
+  padding: 10px;
+  overflow: hidden;
+  font-weight: 500;
+  justify-content:space-between;
+  align-items: center;
+  display: flex;
+}
 
+.footer-info {
+  color: #ffffff;
+  font-family: "Arial";
+  margin-left: 50px;
+}
+
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
+
+.social-logo {
+
+margin-right: 10px;
+
+
+}
+
+/* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
