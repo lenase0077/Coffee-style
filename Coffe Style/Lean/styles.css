@@ -356,25 +356,41 @@ p {
 }
 
 
-/* ---------------------------------------------FOOTER--------------------------------------------------------------------------- */
-
+/* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 .footer {
   background-color: #000000b1;
-
-  margin-top: 20px;
   padding: 10px;
   overflow: hidden;
   font-weight: 500;
-  justify-content: center;
+  justify-content:space-between;
   align-items: center;
   display: flex;
 }
+
 .footer-info {
   color: #ffffff;
   font-family: "Arial";
+  margin-left: 50px;
 }
-/* ---------------------------------------------FOOTER--------------------------------------------------------------------------- */
 
+.social-icons {
+  display: flex;
+  width: 30px; 
+  height: 30px;
+  margin-right: 100px;
+  padding-right: 15px;
+ justify-items: center;
+ 
+}
+
+.social-logo {
+
+margin-right: 10px;
+
+
+}
+
+/* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
   .navbar {
