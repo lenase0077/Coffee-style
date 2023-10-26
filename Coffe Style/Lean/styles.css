@@ -326,7 +326,7 @@ body {
   margin-right: 20px;
 }
 
-h1 {
+.h1titulo {
   font-size: 36px; /* Tamaño del título */
   margin-bottom: 20px;
   color: ;
@@ -334,7 +334,7 @@ h1 {
   color: #f9a03f;
 }
 
-p {
+.parrafo {
   font-size: 18px; /* Tamaño del texto adicional */
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
@@ -360,7 +360,7 @@ p {
 
 .footer {
   background-color: #000000b1;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   font-weight: 500;
   justify-content:space-between;
