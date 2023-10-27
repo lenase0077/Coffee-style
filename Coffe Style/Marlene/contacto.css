@@ -118,22 +118,29 @@ width: 250px;
   
   
   
- .container {
+ .container-formulario {
   max-width: 400px;
   /*margin: 0 auto; */
   margin: 30px;;
   padding: 20px;
   background-color: #ab761f85;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  
 }
 
-.container h1 {
+.form {
+
+  align-content: center;
+}
+
+.container-formulario h1 {
   text-align: center;
 }
 
-.container input[type="text"],
-.container input[type="email"],
-.container textarea {
+.container-formulario input[type="text"],
+.container-formulario input[type="email"],
+.container-formulario textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
