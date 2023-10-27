@@ -41,21 +41,38 @@
     
     </header>
 
- <section class="container">
-       <div>
-    <h1>Tienes alguna duda?</h1>
-    <P> <h4> Si deseas recibir mas informacion sobre nuesta empresa y sobre nuestros productos</h4></P>
+ <section class="container-formulario">
+      
+      <div class="form">
+        <form action="index.html" target="_blank" class="consulta-form">
+          <fieldset>
+            <legend>
+                <h1>Tienes alguna duda?</h1>
+            </legend>
+            <P> <h3> Si deseas recibir más información sobre nuestra empresa y sobre nuestros productos</h3></P>
     <h3>DEJANOS TU MENSAJE!</h3>
-    <H3>Contacto</H3>
-    <form id="contactForm">
-      <input type="text" id="name" name="name" placeholder="Nombre" required>
-      <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
-      <input type="text" id="phone" name="phone" placeholder="Numero de Telefono" required>
-      <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-      <script src="funciones.js"></script>
-    </form>
-      </div> 
+            <label for="nombre">
+              <h4>Nombre:</h4>
+            </label>
+            <input size="30" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
+            <br><br>
+            <label for="correo">
+              <h4>Correo Electrónico:</h4>
+            </label>
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su mail..." required>
+            <br><br>
+            <label for="telefono">
+              <h4>Telefono:</h4>
+            </label>
+            <input type="tel" name="telefono" placeholder="Ingrese su numero de telefono...">
+           
+           
+            <textarea id="consulta" name="consulta" rows="4" placeholder="Escriba su consulta..." required></textarea>
+    
+            <button type="submit" class="consulta-button">Enviar Consulta</button>
+          </fieldset>
+        </form>
+      </div>
 
 </section>
   

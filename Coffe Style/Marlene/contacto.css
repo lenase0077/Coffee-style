@@ -117,24 +117,78 @@ width: 250px;
  
   
   
-  
- .container {
-  max-width: 400px;
-  /*margin: 0 auto; */
-  margin: 30px;;
-  padding: 20px;
-  background-color: #ab761f85;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ 
+#headerContacto {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Arial";
+  font-size: 30pt;
+  color: white;
+  background-image: url('imagenes/fotoCafe.jpg'); /* ACA PODES CAMBIARLE LA IMAGEN POR ALGO QUE QUIERAS */
+  z-index: 0; 
+
+  background-size: cover;
 }
 
-.container h1 {
+
+ 
+.container-formulario {
+   
+  background-image: url('imagenes/coffee2.jpeg');
+  background-size: cover;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.form {
+  align-items: center;
+  display: block;
+  background-color: #daa857;
+  margin: 30px;;
+  padding: 20px;
+  width:  500px;
+  
+}
+
+.consulta-form input,
+.consulta-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  
+  border-radius: 5px;
+}
+
+.consulta-button {
+  padding: 10px 20px;
+  background-color: rgb(59, 41, 7);
+  color: #eff6ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  size: 30px;
+  align-content: end;
+
+}
+
+.container-formulario h1 {
   text-align: center;
 }
 
-.container input[type="text"],
-.container input[type="email"],
-.container textarea {
-  width: 100%;
+.container-formulario input[type="text"],
+.container-formulario input[type="email"],
+.container-formulario input[type="tel"],
+.container-formulario textarea {
+  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #432f05;
@@ -155,25 +209,6 @@ width: 250px;
 .container button[type="submit"]:hover {
   background-color: #1e16028b;
 }
-
-#headerContacto {
-  width: 100%;
-  height: 100vh;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Arial";
-  font-size: 30pt;
-  color: white;
-  background-image: url('imagenes/fotoCafe.jpg'); /* ACA PODES CAMBIARLE LA IMAGEN POR ALGO QUE QUIERAS */
-  z-index: 0; 
-
-  background-size: cover;
-}
-
-
 
 
 /* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
