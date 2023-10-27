@@ -153,7 +153,7 @@ width: 250px;
   align-items: center;
   display: block;
   background-color: #e7c080;
-  margin: 30px;;
+  margin: 50px;;
   padding: 20px;
   width:  500px;
   
@@ -191,7 +191,7 @@ width: 250px;
   width: 90%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #432f05;
+  border: 1px solid #000000;
   border-radius: 4px;
   resize: vertical;
 }
@@ -214,38 +214,6 @@ width: 250px;
 
 
 
-.window-notice {
-  background: rgba(33, 41, 52, .85);
-  display: none;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  display: flex;
-  position: fixed;
-  z-index: 999;
-  ;
-}
-
-
-.window-notice .content {
-  display: none;
-  background: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  max-width: 600px;
-  min-width: 320px !important;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.3rem;
-  
-}
 
 /* ------------------------ FOOTER Y SOCIAL MEDIA ICONS --------------*/
 .footer {
