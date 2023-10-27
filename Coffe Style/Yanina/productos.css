@@ -83,6 +83,44 @@ body {
   transform-origin: bottom left;
 }
 
+
+
+/* ---------------------- LOGO  -------------------------*/
+
+.logo {
+
+  margin-left: 50px;
+  padding: 5px;
+  height: auto;
+  width: 250px;
+  }
+  
+  /* ---------------------- LOGO -------------------------*/
+  
+  /* ---------------------- MENU TOGGLE -------------------------*/
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  /* ESTAS SON LAS 3 RAYITAS */
+  .bar { 
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  
+  
+  
+  
+  /* ---------------------- FIN MENU TOGGLE -------------------------*/
+
+
+  
 /* Style for the map and image containers */
 #map {
   float: left;
@@ -272,8 +310,9 @@ margin-right: 10px;
 /* ------------------------ FIN FOOTER Y SOCIAL MEDIA ICONS --------------*/
 /* -----------------------------------------MEDIA CHANGE--------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
+  . .navbar {
+    display: flex;
+    justify-content:space-between;
     text-align: center;
     position: relative;
     background-color: #111;
@@ -394,6 +433,7 @@ margin-right: 10px;
 .menu-toggle {
   display: flex; 
   margin-right: 50px;
+  order:2;
 }
 
 .logo {
