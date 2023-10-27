@@ -44,7 +44,7 @@
  <section class="container-formulario">
       
       <div class="form"> <!--coffeestyle1 -->
-        <form action="https://formsubmit.co/solemba_Scs@hotmail.com" method="POST" target="_blank" class="consulta-form">
+        <form action="" class="consulta-form" id="form">
           <fieldset>
             <legend>
                 <h1>Tienes alguna duda?</h1>
@@ -52,19 +52,19 @@
             <P> <h3> Si deseas recibir más información sobre nuestra empresa y sobre nuestros productos</h3></P>
              <h3>DEJANOS TU MENSAJE!</h3>
             <label for="nombre">
-              <h4>Nombre:</h4>
+              <h4>Nombre*:</h4>
             </label>
             <input size="30" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre..." required>
             <br><br>
             <label for="correo">
-              <h4>Correo Electrónico:</h4>
+              <h4>Correo Electrónico*:</h4>
             </label>
             <input type="email" id="correo" name="correo" placeholder="Ingrese su mail..." required>
             <br><br>
             <label for="telefono">
               <h4>Telefono:</h4>
             </label>
-            <input type="tel" name="telefono" placeholder="Ingrese su numero de telefono...">
+            <input type="tel" id='telefono' name="telefono" placeholder="Ingrese su numero de telefono...">
            
            
             <textarea id="consulta" name="consulta" rows="4" placeholder="Escriba su consulta..." required></textarea>
@@ -72,9 +72,9 @@
 
             
             
-            <button type="submit" class="consulta-button" id="abrir-popup">Enviar Consulta</button>
+            <button type="submit" class="consulta-button" id="enviarEmail">Enviar Consulta</button>
 
-            <imput type="hidden" name="text" value="../Marlene/contacto.html">
+           
 
       
     
