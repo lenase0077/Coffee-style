@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad</title>
+   
+    <link rel="stylesheet" href="./comunidad.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/ico/favicon.ico"> <!-- FAVICON CON LA MISMA IMAGEN QUE EL LOGO NUEVO-->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- FONTAWESOME -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+        
+    
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">
+             
+           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> <!--logo nuevo -->
+              
+            </a>
+        </div>
+
+         <!-- toggle -->
+       <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../Lean/index.html">Inicio</a></li>
+            <li><a href="../Yanina/comentarios.html">comentarios</a></li>
+            <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
+            <li><a href="../Martin/acercade.html">Acerca de</a></li>
+            <li><a href="../Marlene/contacto.html">Contacto</a></li>
+            <li><a href="../BackEnd/comunidad.html">Comunidad </a></li>
+        </ul>
+
+    </nav>
+
+   
+    
+    </header>
+        
+    <header id="headerSucursales" >
+        <h3 > HABLEMOS</h3>
+    
+    </header>
+    <section class="sucursales-contenedor"> 
+    
+        
+        <div class="contenedor-negro">
+            
+            <div class="sucursales-texto"> 
+                <h1>Nuestra Comunidad</h2>
+
+                   <p> Tenes un mensaje que dejarnos? Queres ver que opinan nuestros clientes?
+                    Te invitamos a dejarnos un mensaje </p>
+                
+                
+            </div>
+
+            
+
+        </div>
+        
+</section>
+
+
+
+
+
+     <!-- --------- CRUD ------------- -->
+  <section>
+    <div id="app" class="container">
+        <br>
+        <h1>Comentarios</h1>
+        <a class="btn btn-success" href="nuevo_comentario.html">Nuevo Comentario</a>
+        <section v-if="error">Lo sentimos se produjo un error</section>
+        <section v-else>
+            <section v-if="cargando">
+                <div class="spinner-border"></div>
+                <p>Cargando .....</p>
+
+            </section>
+            <section v-else>
+                
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Mensaje</th>
+                                 <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="comentario in comentarios" class="">
+                                <td scope="row">{{comentario.id}}</td>
+                                <td>{{comentario.nombre}}</td>
+                                <td>{{comentario.mensaje}}</td>
+                                
+                                <td>
+                                    <img width="60" :src="comentario.imagen" :alt="comentario.nombre">
+
+
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger" v-on:click="eliminar(comentario.id)"    >Eliminar</button>
+                                    
+                                    <a class="btn btn-primary" :href="'comentario_editar.html?id='+ comentario.id+'&nombre=' +comentario.nombre+ '&imagen='+comentario.imagen+ '&mensaje='+comentario.mensaje" >Editar</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+
+
+
+<section class="contenedor-minigaleria"> <!-- mini galeria con fotos -->
+    <div class="fotoGaleria">
+             <img src="imagenes/clientes.jpg" alt="">
+         </div>
+         <div class="fotoGaleria">
+             <img src="imagenes/clientes2.jpg" alt="">
+         </div>
+
+         <div class="fotoGaleria">
+             <img src="imagenes/clientes3.jpg" alt="">
+         </div>
+
+         <div class="fotoGaleria">
+             <img src="imagenes/clientes4.jpg" alt="">
+         </div>
+
+     
+ </section> <!-- fin mini galeria -->
+
+
+<!-- FOOTER Y LOGOS DE REDES SOCIALES -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>© Copyright 2023 Coffee Style - Todos los derechos reservados</p>
+        </div>
+        <div class="social-icons">
+            
+            <img src="imagenes/icons8-facebook-50.png" alt="Facebook" class="social-logo">
+            </a>
+            
+            <img src="imagenes/icons8-twitter-50.png" alt="Twitter" class="social-logo">
+            </a>
+            <img src="imagenes/icons8-instagram-50.png" alt="Instagram" class="social-logo">
+            </a>
+        </div>
+    </footer>
+
+
+<script src="./menuToggle.js"></script> 
+<script src="./cambiarColorNavbar.js"></script>
+<script src="./comentarios.js"></script>
+
+</body>
+
+</html>
+
+
+
+    
+    
