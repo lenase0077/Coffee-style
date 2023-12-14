@@ -38,7 +38,7 @@ fetch(url, options)
 location.reload();
 })
 },
-grabar(){
+guardar(){
 let comentario = {
 usuario:this.usuario,
 texto: this.texto,
@@ -53,7 +53,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "./index.html";
+window.location.href = "./comunidad.html";
 })
 .catch(err => {
 console.error(err);

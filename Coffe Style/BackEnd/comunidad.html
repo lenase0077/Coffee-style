@@ -31,9 +31,9 @@
 
     <nav class="navbar" id="navbar">
         <div class="logo">
-            <a href="#">
+            <a href="../Lean/index.html">
              
-           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> <!--logo nuevo -->
+           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> 
               
             </a>
         </div>
@@ -48,7 +48,7 @@
 
         <ul class="nav-links" id="nav-links">
             <li><a href="../Lean/index.html">Inicio</a></li>
-            <li><a href="../Yanina/comentarios.html">comentarios</a></li>
+            <li><a href="../Yanina/productos.html">Productos</a></li>
             <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
             <li><a href="../Martin/acercade.html">Acerca de</a></li>
             <li><a href="../Marlene/contacto.html">Contacto</a></li>
@@ -59,12 +59,14 @@
 
    
     
-    </header>
+    
         
     <header id="headerSucursales" >
         <h3 > HABLEMOS</h3>
     
     </header>
+
+
     <section class="sucursales-contenedor"> 
     
         
@@ -119,13 +121,14 @@
                             <tr v-for="comentario in comentarios" class="">
                                 <td scope="row">{{comentario.id}}</td>
                                 <td>{{comentario.nombre}}</td>
-                                <td>{{comentario.mensaje}}</td>
-                                
                                 <td>
                                     <img width="60" :src="comentario.imagen" :alt="comentario.nombre">
 
 
                                 </td>
+                                <td>{{comentario.mensaje}}</td>
+                                
+                               
                                 <td>
                                     <button type="button" class="btn btn-danger" v-on:click="eliminar(comentario.id)"    >Eliminar</button>
                                     

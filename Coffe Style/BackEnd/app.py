@@ -46,7 +46,7 @@ ma = Marshmallow(app): Se crea un objeto ma de la clase Marshmallow, que se util
 '''
 # Configura la URI de la base de datos con el driver de MySQL, usuario, contraseña y nombre de la base de datos
 # URI de la BD == Driver de la BD://user:password@UrlBD/nombreBD
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:root@localhost/proyecto"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:root@localhost/comentarios"
 # Configura el seguimiento de modificaciones de SQLAlchemy a False para mejorar el rendimiento
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # Crea una instancia de la clase SQLAlchemy y la asigna al objeto db para interactuar con la base de datos
@@ -151,7 +151,7 @@ def get_comentario(id):
     comentario = Comentario.query.get(id)  # Obtiene el producto correspondiente al ID recibido
     return comentarios_schema.jsonify(comentario)  # Retorna el JSON del producto
 
-@app.route("/comentarios/<id>", methods=["DELETE"])
+@app.route("/comunidad/<id>", methods=["DELETE"])
 def delete_comentario(id):
     """
     Endpoint para eliminar un producto de la base de datos.
@@ -163,7 +163,7 @@ def delete_comentario(id):
     db.session.commit()  # Guarda los cambios en la base de datos
     return comentarios_schema.jsonify(all_coments)  # Retorna el JSON del producto eliminado
 
-@app.route("/comentarios", methods=["POST"])  # Endpoint para crear un producto
+@app.route("/comunidad", methods=["POST"])  # Endpoint para crear un producto
 def create_comentario():
     """
     Endpoint para crear un nuevo producto en la base de datos.
@@ -180,7 +180,7 @@ def create_comentario():
     db.session.commit()  # Guarda los cambios en la base de datos
     return comentarios_schema.jsonify(new_comentario)  # Retorna el JSON del nuevo producto creado
 
-@app.route("/comentarios/<id>", methods=["PUT"])  # Endpoint para actualizar un producto
+@app.route("/comunidad/<id>", methods=["PUT"])  # Endpoint para actualizar un producto
 def update_comentario(id):
     """
     Endpoint para actualizar un producto existente en la base de datos.
