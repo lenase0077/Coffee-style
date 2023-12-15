@@ -11,41 +11,47 @@ rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
 crossorigin="anonymous">
 
-<link rel="stylesheet" href="./comunidad.css">
 <link rel="icon" type="image/x-icon" href="imagenes/ico/favicon.ico"> <!-- FAVICON CON LA MISMA IMAGEN QUE EL LOGO NUEVO-->
+<link rel="stylesheet" href="./comunidad.css">
 
 
 </head>
 
 <body>
-<header id="header">
-
-
-</header>
 
 
 <main>
 <div class="container" id="app">
-<form style="bac
+    
+<form>
 <h1>Alta de Producto</h1>
-<div class="mb-3">
-<label for="nombre">Nombre</label>
-<input type="text" name="nombre" id="nombre" v-model="nombre">
-</div>
-<div class="mb-3">
-<label for="precio">Precio</label>
-<input type="number" name="precio" id="precio" v-model="precio">
-</div>
-
-<div class="mb-3">
-<label for="stock">Stock</label>
-<input type="number" name="stock" id="stock" v-model="stock">
-</div>
-<div class="mb-3">
-<label for="imagen">Imagen</label>
-<input type="text" name="imagen" id="imagen" v-model="imagen">
-<img width="100" :src="imagen" alt="">
-</div>
+<div id="app">
+    <div class="mb-3">
+      <label for="id">ID</label>
+      <input type="text" name="id" id="id" v-model="id">
+    </div>
+  
+    <div class="mb-3">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" v-model="nombre">
+    </div>
+  
+    <div class="mb-3">
+      <label for="precio">Precio</label>
+      <input type="number" name="precio" id="precio" v-model="precio">
+    </div>
+  
+    <div class="mb-3">
+      <label for="stock">Stock</label>
+      <input type="number" name="stock" id="stock" v-model="stock">
+    </div>
+  
+    <div class="mb-3">
+      <label for="imagen">Imagen</label>
+      <input type="text" name="imagen" id="imagen" v-model="imagen">
+      <img width="100" :src="imagen" alt="">
+    </div>
+  </div>
 <button type="button" class="btn btn-success"
 
 v-on:click="grabar()">Grabar</button>
