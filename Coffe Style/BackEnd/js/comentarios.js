@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        url:"http://4li3ntr3x.pythonanywhere.com/comentarios",
+        url:"http://zole.pythonanywhere.com/productos",
         comentarios:[],
         error:false,
         cargando:true
@@ -26,7 +26,7 @@ const { createApp } = Vue
                 })
         },
         eliminar(producto) {
-            const url = 'http://4li3ntr3x.pythonanywhere.com/comentarios/' + comentario;
+            const url = 'http://zole.pythonanywhere.com/productos' + comentario;
             var options = {
                 method: 'DELETE',
             }

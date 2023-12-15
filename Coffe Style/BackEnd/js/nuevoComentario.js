@@ -11,7 +11,7 @@ function guardar() {
         mensaje: p
                 
     }
-    let url = "http://4li3ntr3x.pythonanywhere.com/productos"
+    let url = "http://zole.pythonanywhere.com/productos"
     var options = {
         body: JSON.stringify(comentario),
         method: 'POST',

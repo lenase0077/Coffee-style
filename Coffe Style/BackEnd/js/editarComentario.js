@@ -28,7 +28,7 @@ function modificar() {
        
         
     }
-    let url = "http://4li3ntr3x.pythonanywhere.com/productos/"+id
+    let url = "http://zole.pythonanywhere.com/productos"+id
     var options = {
         body: JSON.stringify(comentario),
         method: 'PUT',
