@@ -2,8 +2,9 @@ const { createApp } = Vue
 createApp({
 data() {
 return {
-comentarios:[],
-
+productos:[],
+//url:'http://localhost:5000/productos',
+// si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
 url:'http://zole.pythonanywhere.com/productos', // si ya lo subieron a pythonanywhere
 error:false,
 cargando:true,
@@ -11,15 +12,17 @@ cargando:true,
 id:0,
 nombre:"",
 imagen:"",
-mensaje:"",
+stock:0,
+precio:0,
 }
 },
 methods: {
 fetchData(url) {
 fetch(url)
+
 .then(response => response.json())
 .then(data => {
-this.comentarios = data;
+this.productos = data;
 this.cargando=false
 })
 .catch(err => {
@@ -27,8 +30,8 @@ console.error(err);
 this.error=true
 })
 },
-eliminar(comentario) {
-const url = this.url+'/' + comentario;
+eliminar(producto) {
+const url = this.url+'/' + producto;
 var options = {
 method: 'DELETE',
 }
@@ -38,14 +41,15 @@ fetch(url, options)
 location.reload();
 })
 },
-guardar(){
-let comentario = {
-usuario:this.usuario,
-texto: this.texto,
+grabar(){
+let producto = {
+nombre:this.nombre,
+precio: this.precio,
+stock: this.stock,
 imagen:this.imagen
 }
 var options = {
-body:JSON.stringify(comentario),
+body:JSON.stringify(producto),
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 redirect: 'follow'
@@ -53,11 +57,12 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "./comunidad.html";
+window.location.href = "./productos.html";
 })
 .catch(err => {
 console.error(err);
 alert("Error al Grabarr")
+
 })
 }
 },
