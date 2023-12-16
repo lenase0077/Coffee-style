@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Login 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="login.css"> 
+
+	</head>
+
+	<body class="img js-fullheight" style="background-image: url(./imagenes/fondologin.jpg);">
+        <div class="login-wrapper">
+            <form action="" class="form">
+              <img src="./imagenes/icon.png" alt="">
+              <h2>Bienvenido!</h2>
+              <div class="input-group">
+                <input type="text" name="loginUser" id="loginUser" autocomplete="off" required>
+                <label for="loginUser">Usuario</label>
+              </div>
+              <div class="input-group">
+                <input type="password" name="loginPassword" id="loginPassword" required>
+                
+                <label for="loginPassword">Contraseña</label>
+                
+              </div>
+               
+             <button class="submit-btn" type="button" onclick="validarLogin()">Iniciar Sesión</button>
+              
+              <br>
+              <a href="#forgot-pw" class="forgot-pw small-text"> Te olvidaste la contraseña?</a>
+              <br>
+              <br>
+              <a href="./stock.html" class="forgot-pw"> < VOLVER</a>
+            </form>
+        
+            <div id="forgot-pw">
+              <form action="" class="form">
+                <a href="#" class="close">&times;</a>
+                <h2>Reset Password</h2>
+                <div class="input-group">
+                  <input type="email" name="email" id="email" required>
+                  <label for="email">Email</label>
+                </div>
+                <input type="submit" value="Submit" class="submit-btn">
+              </form>
+            </div>
+          </div>
+	
+
+
+   
+        <!-- FOOTER Y LOGOS DE REDES SOCIALES -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>© Copyright 2023 Coffee Style - Todos los derechos reservados</p>
+        </div>
+        <div class="social-icons">
+            
+            <img src="imagenes/icons8-facebook-50.png" alt="Facebook" class="social-logo">
+            </a>
+            
+            <img src="imagenes/icons8-twitter-50.png" alt="Twitter" class="social-logo">
+            </a>
+            <img src="imagenes/icons8-instagram-50.png" alt="Instagram" class="social-logo">
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="js/validarLogin.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+  <script src="js/main2.js"></script>
+  
+
+
+	</body>
+</html>

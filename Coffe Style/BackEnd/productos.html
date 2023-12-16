@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Productos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+            <link rel="stylesheet" href="./productos.css">
+            <link rel="icon" type="image/x-icon" href="imagenes/ico/favicon.ico">
+            <!-- FAVICON CON LA MISMA IMAGEN QUE EL LOGO NUEVO-->
+        
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="../Lean/index.html">
+             
+           <img src="imagenes/ico/256x256.png" alt="Logo de la empresa"> 
+              
+            </a>
+        </div>
+
+         <!-- toggle -->
+       <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="../Lean/index.html">Inicio</a></li>
+            <li><a href="../Yanina/productos.html">Productos</a></li>
+            <li><a href="../Soledad/ubicacion.html">Ubicación</a></li>
+            <li><a href="../Martin/acercade.html">Acerca de</a></li>
+            <li><a href="../Marlene/contacto.html">Contacto</a></li>
+            <li><a href="../BackEnd/stock.html">Nuestro Stock </a></li>
+        </ul>
+
+    </nav>
+
+   
+    
+    
+        
+    <header id="headerSucursales">
+        <h3> PRODUCTOS DISPONIBLES</h3>
+    
+    </header>
+    <section class="sucursales-contenedor"> 
+    <div class="contenedor-negro">
+            
+        <div class="sucursales-texto"> 
+            <h1>Nuestro Stock</h2>
+
+               <p> Querés saber si tenemos un producto antes de pasar por nuestros locales? En esta lista podrás ver nuestro stock disponible   </p>
+          
+            
+        </div>
+
+
+    </div>
+
+    </section>
+
+
+    <section > 
+    <main>
+        <div id="app" class="container">
+            <div class="row">
+            <div class="col-md-10"><h1>Productos</h1> </div>
+            <div class="col-md-2 login"><a href="stock.html"> Cerrar Sesión </a></div>
+        </div>
+            <br>
+            <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
+            
+            <br><br>
+
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="producto in productos">
+                                    <td scope="row">{{producto.id}}</td>
+                                    <td>{{producto.nombre}}</td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.stock}}</td>
+                                    <td>
+                                        <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary"
+                                            :href="'producto_update.html?id='+ producto.id">Editar</a>
+                                        <button type="button" class="btn btn-danger"
+                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    </section>
+
+
+    <section class="contenedor-minigaleria"> <!-- mini galeria con fotos -->
+        <div class="fotoGaleria">
+                 <img src="imagenes/cafe.jpg" alt="">
+             </div>
+             <div class="fotoGaleria">
+                 <img src="imagenes/cafe2.jpg" alt="">
+             </div>
+    
+             <div class="fotoGaleria">
+                 <img src="imagenes/cafe3.jpg" alt="">
+             </div>
+    
+             <div class="fotoGaleria">
+                 <img src="imagenes/cafe4.jpg" alt="">
+             </div>
+    
+         
+     </section> <!-- fin mini galeria -->
+
+
+
+    <footer>
+        <!-- FOOTER Y LOGOS DE REDES SOCIALES -->
+    <footer class="footer">
+        <div class="footer-info">
+            <p>© Copyright 2023 Coffee Style - Todos los derechos reservados</p>
+        </div>
+        <div class="social-icons">
+            
+            <img src="imagenes/icons8-facebook-50.png" alt="Facebook" class="social-logo">
+            </a>
+            
+            <img src="imagenes/icons8-twitter-50.png" alt="Twitter" class="social-logo">
+            </a>
+            <img src="imagenes/icons8-instagram-50.png" alt="Instagram" class="social-logo">
+            </a>
+        </div>
+    </footer>
+
+
+
+   
+
+
+    <script 
+        src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity = "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin = "anonymous" ></script> <!--Link de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="./js/productos.js"></script>
+
+    <script src="./js/menuToggle.js"></script> 
+<script src="./js/cambiarColorNavbar.js"></script>
+</body>
+
+</html>
